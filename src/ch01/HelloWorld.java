@@ -6,8 +6,18 @@ public class HelloWorld {
     public static void main(String[] args) {
         //    메인 메서드: 프로그램 시작과 끝을 관리하는 함수
         System.out.println("출력하는 문자열!");
+
+
+        for(int i = 1; i <10; i++ ){
+            for(int j = 2; j<10; j++){
+                System.out.print(i*j+"");
+            }
+            System.out.println("");
+
+        }
     }
     //자동정렬(Ctrl + Alt + L)
+
 
 
 }

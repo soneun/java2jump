@@ -10,6 +10,12 @@ class Anima {
 }
 //자식 클래스 (Anima 클래스를 상속)
 class Dog extends Anima {
+    //생성자는 클래스명과 똑같고 리턴이 없음
+    //그중에 디폴트생성자는 입력변수가 없음(생략가능)
+    Dog(){
+        System.out.println("도그객체생성");
+    }
+
     void sleep(){
         System.out.println(this.name + "zzz");
     }
@@ -32,7 +38,7 @@ public class Ch_상속 {
         Anima a = new Dog();//상속관계일 때 부모타입으로 선언가능
         //Dog b = new Anima(); 자식타입으로 선언하고 부모객체는 안됨.
         Dog d = new Dog();
-        Anima a1 = new Anima();
+        //Anima a1 = new Anima();
 
 
         d.setName("puppy");
